@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+.header_container {
+    background-color: aqua;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5em;
+    box-sizing: border-box;
+}
+
+.foto_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.title_header {
+    font-size: 16px;
+}
+
+.foto {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
