@@ -5,10 +5,17 @@
 
 body {
     font-family: roboto, sans-serif;
+    background-image: url(/imagem/subtle-prism.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
 }
 
 .header_container {
-    background-color: aqua;
+    background-color: #B3EDA9;
+    padding: .5em;
+    box-sizing: border-box;
+    margin-bottom: 1em;
 }
 
 .header {
@@ -27,11 +34,61 @@ body {
 }
 
 .title_header {
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.title_header:hover {
+    color: blueviolet;
+    cursor: pointer;
 }
 
 .foto {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+}
+
+.menu_nav {
+    display: none;
+}
+
+.main_content {
+    background-color: aqua;
+    text-align: center;
+}
+
+.section_container {
+    margin: 0 20px;
+    height: 17em;
+    margin-bottom: 1em;
+}
+
+.main_title {
+    font-size: 30px;
+    padding: 1em;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+.section_container p {
+    text-align: left;
+}
+
+.btn {
+    background-color: #5F1997;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: .7em;
+    margin-top: 2em;
+}
+
+.btn:hover {
+    padding: .8em;
+}
+
+.aside {
+    display: none;
 }
