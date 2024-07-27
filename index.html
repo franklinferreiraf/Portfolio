@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
@@ -15,7 +19,12 @@
                 <img src="/imagem/Captura de tela 2024-04-26 144449.png" alt="Minha Foto" class="foto">
                 <h1 class="title_header">Franklin Ferreira dos Santos</h1>
             </article>
-            <nav class="menu_nav">
+            <div class="menu-icon" id="menu-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="menu-nav" id="menu-nav">
                 <ul class="ul_nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Sobre</a></li>
@@ -30,7 +39,7 @@
 
     <main class="main_content"> <!-- main onde vai ficar minha apresentação -->
         <section class="section_container"> 
-            <h2>Olá, meu nome é franklin</h2>
+            <h2 class="main_title">Olá, meu nome é franklin</h2>
             <p>Estudante de desenvolvimento web com foco em front-end e banco de dados, buscando experiência prática e aprendizado continuo.</p>
             <a href="#" class="btn">Projetos</a>
         </section>
@@ -51,14 +60,15 @@
             </article>
             <section class="info_sobre">
                 <article class="conhecer">
-                    <h3>Me Conhecer!</h3>
+                    <h3 class="title_conhecer">Me Conhecer!</h3>
                     <p>Sou um desenvolvedor Web focado em Frontend, construindo e gerenciando o Front-end de sites e aplicações Web que levam ao sucesso do produto geral. Confira alguns dos meus trabalhos na seção Projetos.
                     Também gosto de compartilhar conteúdo relacionado ao que aprendi ao longo dos anos em Desenvolvimento Web para que possa ajudar outras pessoas da Comunidade de Desenvolvimento. Sinta-se à vontade para se conectar ou me seguir no <a href="#">Linkedin</a> e no <a href="#">Instagram</a>, onde posto conteúdo útil relacionado ao desenvolvimento e programação web
                     Estou aberto a oportunidades de trabalho onde possa contribuir, aprender e crescer. Se tiver uma boa oportunidade que corresponda às minhas competências e experiência, não hesite em contactar-me.</p>
+                    <a href="#" class="btn2">Contato</a>
                 </article>
 
                 <article class="habilidades">
-                    <h3>Minhas Habilidades</h3>
+                    <h3 class="title_habilidades">Minhas Habilidades</h3>
                     <ul class="ul_habilidades">
                         <li>Html</li>
                         <li>Css</li>
@@ -73,25 +83,30 @@
     </main>
 
 
-    <footer class="rodade">
-        <section class="rodade_container">
+    <footer class="rodape">
+        <section class="rodape_container">
             <article class="social_rodape">
-                <ul>
+                <h3 class="title_social">Redes Sociais</h3>
+                <ul class="ul_rodape">
                     <li><a href="#"><img src="/icomoon/PNG/github.png" alt="GitHub"></a></li>
                     <li><a href="#"><img src="/icomoon/PNG/instagram.png" alt="Instagram"></a></li>
                     <li><a href="#"><img src="/icomoon/PNG/linkedin.png" alt="Linkedin"></a></li>
                 </ul>
             </article>
+
             <article class="contato">
-                <h3>Contato</h3>
+                <h3 class="title_contato">Contato</h3>
                 <p>Email: <a href="#">franklinferreira280@gmail.com</a></p>
                 <p>Telefone: (75) 99196-4091</p>
             </article>
+
             <article class="copy">
                 <p>&copy; 2024 Franklin Ferreira dos Santos</p>
-                <p></p>
             </article>
         </section>
     </footer>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
