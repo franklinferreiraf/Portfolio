@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     --primary-color: #B3EDA9;
     --secundary-color: #8a2be2;
 }
@@ -50,8 +51,75 @@ body {
     border-radius: 50%;
 }
 
-.menu_nav {
+.menu-icon {
     display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    margin-left: 200%;
+}
+
+.menu-nav {
+    display: flex;
+}
+
+.ul_nav {
+    list-style-type: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.ul_nav li {
+    margin: 0 15px;
+}
+
+.ul_nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ul_nav a:hover {
+    color: var(--secundary-color);
+}
+
+@media screen and (min-width: 25em) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu-nav {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        height: 60%;
+        background: #333;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .ul_nav {
+        flex-direction: column;
+    }
+
+    .ul_nav li {
+        margin: 20px 0;
+    }
+
+    .menu-nav.nav-active {
+        transform: translateX(0);
+    }
 }
 
 .main_content {
@@ -61,7 +129,6 @@ body {
 .section_container {
     height: 17em;
     margin-bottom: 1em;
-    background-color: orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,4 +241,33 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+.social_rodape {
+    padding: .6em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ul_rodape {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contato {
+    padding: .6em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.title_contato {
+    margin-bottom: 15px;
+}
+
+.title_social, .title_contato {
+    text-transform: uppercase;
 }
