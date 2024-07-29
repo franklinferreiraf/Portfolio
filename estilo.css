@@ -158,11 +158,13 @@ body {
     text-decoration: none;
     border-radius: 5px;
     padding: .7em;
+    box-sizing: border-box;
     margin-top: 1.8em;
 }
 
 .btn:hover {
-    padding: .8em;
+    transition: all .5s ease-in;
+    background-color: cornflowerblue;
 }
 
 .aside {
